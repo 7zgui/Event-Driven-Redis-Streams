@@ -1,4 +1,4 @@
-package dto;
+package com.redis.streams.redispublisher.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,8 +11,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class MovieDto {
-    private Integer id;
-    private String name;
-    private String productionHouse;
+public class MovieDetailsDto {
+    private MovieDto movie;
+    private Boolean likes = false;
+    private Boolean dislikes = false;
+    private Double rating;
 }
